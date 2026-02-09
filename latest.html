@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Softramming • Stop Losing Money — Start Winning with Data</title>
+
+  <!-- Basic SEO -->
+  <meta name="description" content="Softramming helps Nigerian businesses stop bleeding cash from bad stock, wasted ads, and guesswork. Secure websites + powerful business data analysis that directly boosts sales, ROI, and profit." />
+  <meta name="keywords" content="business data analyst, virtual data analyst, sales forecasting Nigeria, inventory optimization, stock management analysis, Power BI expert, Python data analysis, business intelligence Lagos, fintech data analyst, retail analytics Nigeria, Softramming, Daniel Iyare" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Softramming • Stop Losing Money — Start Winning with Data" />
+  <meta property="og:description" content="Your business is quietly losing money every day — bad stock, wrong ads, guesswork. I stop the bleed. I show you exactly how to make more profit. Secure web + real business analysis." />
+  <meta property="og:image" content="https://softramming.github.io/portfolio/og-image.jpg" /> <!-- Replace with real image -->
+  <meta property="og:url" content="https://softramming.github.io/portfolio" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Softramming" />
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Softramming • Stop Losing Money — Start Winning with Data" />
+  <meta name="twitter:description" content="Tired of overstocking, understocking, and ads that don’t pay? I turn your data into clear profit strategies. Secure web dev + business analysis that works." />
+  <meta name="twitter:image" content="https://softramming.github.io/portfolio/og-image.jpg" />
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Softramming Portfolio",
+    "url": "https://softramming.github.io/portfolio",
+    "description": "Softramming by Daniel Iyare — Full-stack web development and business data analysis that stops profit leaks and drives real growth for Nigerian businesses.",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://softramming.github.io/portfolio/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Daniel Iyare",
+    "alternateName": "Softramming",
+    "url": "https://softramming.github.io/portfolio",
+    "sameAs": [
+      "https://wa.me/2347071377219",
+      "mailto:softramming@gmail.com"
+    ],
+    "jobTitle": "Full-Stack Web Developer & Business Data Analyst",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Softramming"
+    },
+    "description": "Helping Nigerian businesses stop losing money through smart data analysis, sales forecasting, inventory optimization, and secure web development.",
+    "knowsAbout": [
+      "Business Analysis", "Data Visualization", "Sales Forecasting", "Inventory Management", "Power BI", "Tableau", "Python", "React", "PHP", "MySQL"
+    ]
+  }
+  </script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  
+  <style>
+    :root {
+      --bg: #0a0a12;
+      --bg-card: #13131f;
+      --text: #e2e8f0;
+      --text-muted: #94a3b8;
+      --primary: #6366f1;
+      --primary-dark: #4f46e5;
+      --accent: #a78bfa;
+      --border: #2d3748;
+    }
+    [data-theme="light"] {
+      --bg: #f8fafc;
+      --bg-card: #ffffff;
+      --text: #1e293b;
+      --text-muted: #64748b;
+      --primary: #4f46e5;
+      --primary-dark: #4338ca;
+      --accent: #7c3aed;
+      --border: #e2e8f0;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      font-size: 16px;
+      overflow-x: hidden;
+    }
+    .theme-toggle {
+      position: fixed; top: 1rem; right: 1rem; width: 44px; height: 44px;
+      background: rgba(19,19,31,0.9); border: 1px solid var(--border);
+      color: var(--text-muted); border-radius: 50%; display: flex;
+      align-items: center; justify-content: center; cursor: pointer;
+      z-index: 1000; transition: all 0.35s ease;
+    }
+    .theme-toggle:hover { background: var(--primary); color: white; transform: scale(1.08); }
+    .container { max-width: 1180px; margin: 0 auto; padding: 0 1.1rem; }
+    .hero {
+      padding: 140px 0 100px;
+      text-align: center;
+      background: linear-gradient(to bottom, rgba(99,102,241,0.04), transparent 70%);
+    }
+    .name {
+      font-weight: 800;
+      background: linear-gradient(90deg, var(--primary), var(--accent));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 0.6rem;
+      font-size: 3rem;
+      line-height: 1.05;
+    }
+    .hero-subtitle { font-size: 1.25rem; max-width: 90%; margin: 0 auto 1.4rem; color: var(--text-muted); font-weight: 500; }
+    .hero-impact { font-size: 1.15rem; color: var(--accent); margin-bottom: 2.2rem; font-weight: 600; }
+    .btn {
+      padding: 1rem 2.2rem; border-radius: 50px; font-weight: 600; text-decoration: none;
+      transition: all 0.35s; margin: 0.6rem; display: inline-block; font-size: 1.05rem;
+    }
+    .btn-primary { background: var(--primary); color: white; }
+    .btn-primary:hover { background: var(--primary-dark); transform: translateY(-4px); }
+    .btn-outline { border: 2px solid var(--accent); color: var(--accent); }
+    .btn-outline:hover { background: var(--accent); color: #0a0a12; }
+    section { padding: 5.5rem 0; }
+    h2 { font-size: 2.3rem; text-align: center; margin-bottom: 2.8rem; position: relative; }
+    h2::after {
+      content: ''; position: absolute; width: 90px; height: 5px;
+      background: linear-gradient(to right, var(--primary), var(--accent));
+      bottom: -14px; left: 50%; transform: translateX(-50%); border-radius: 3px;
+    }
+    .grid, .tools-grid, .lang-grid { display: grid; grid-template-columns: 1fr; gap: 2rem; }
+    .card {
+      background: var(--bg-card); border: 1px solid var(--border); border-radius: 16px;
+      overflow: hidden; transition: all 0.4s;
+    }
+    .card:hover { transform: translateY(-10px); box-shadow: 0 25px 50px rgba(0,0,0,0.35); border-color: var(--primary); }
+    .card-img { height: 190px; background: linear-gradient(135deg, #1e293b, #334155);
+      display: flex; align-items: center; justify-content: center; font-size: 4.5rem; color: var(--primary); }
+    .card-body { padding: 1.8rem; }
+    .impact { background: rgba(99,102,241,0.12); padding: 1.2rem; border-radius: 14px;
+      margin: 1.5rem 0; text-align: center; font-weight: 600; color: var(--accent); }
+    .tools-grid .tool-card, .lang-grid .lang-item {
+      text-align: center; padding: 2rem 1.5rem; background: var(--bg-card);
+      border-radius: 14px; border: 1px solid var(--border);
+    }
+    .tool-card i, .lang-item i { font-size: 3rem; margin-bottom: 1.2rem; color: var(--primary); }
+    .lang-item strong { display: block; font-size: 1.2rem; margin-bottom: 0.5rem; color: var(--text); }
+    .lang-item span { font-size: 0.98rem; color: var(--text-muted); font-weight: 500; }
+    @media (min-width: 720px) {
+      .name { font-size: 4.5rem; }
+      .hero { padding: 180px 0 120px; }
+      .hero-subtitle { font-size: 1.35rem; max-width: 800px; }
+      .grid, .tools-grid, .lang-grid { grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); }
+      .card-img { height: 210px; }
+      section { padding: 7rem 0; }
+    }
+    @media (min-width: 960px) {
+      .name { font-size: 5.5rem; }
+      .hero { padding: 240px 0 140px; }
+      h2 { font-size: 3rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <button class="theme-toggle"><i class="fas fa-moon"></i></button>
+
+  <div class="container">
+
+    <!-- HERO – Ultra-Urgent & Intriguing -->
+    <section class="hero">
+      <h1 class="name">Softramming</h1>
+      <p class="hero-subtitle">Your business is silently bleeding money — right now — and you’re too busy to notice.</p>
+      <p class="hero-impact">Every day you wait, thousands disappear: wrong stock, bad ads, blind guesses. I stop the bleed fast. I show you exactly where profit is hiding. I hand you the plan that puts real cash back in your pocket — starting today.</p>
+      <div>
+        <a href="#analysis" class="btn btn-primary">Show Me How Much I'm Losing — And How to Fix It</a>
+        <a href="#projects" class="btn btn-outline">Proof It Works</a>
+        <a href="#contact" class="btn btn-outline">Talk Now – No More Waiting</a>
+        <a href="resume-daniel-iyare.pdf" download class="btn btn-outline">
+          <i class="fas fa-download"></i> Download Resume
+        </a>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <h2>About Softramming</h2>
+      <div style="max-width: 920px; margin: auto; text-align: center; font-size: 1.12rem; color: var(--text-muted);">
+        <p>I'm Daniel Iyare — the mind behind **Softramming**.</p>
+        <p style="margin: 1.6rem 0;">
+          I build secure, high-performing websites that actually deliver — and I help serious business owners stop the silent profit leaks that keep them up at night.
+        </p>
+        <p>From launching production-ready platforms to diving deep into your numbers and giving you the exact moves that grow revenue and protect cash flow, I bring code + sharp business sense so you finally win instead of just surviving.</p>
+      </div>
+    </section>
+
+    <!-- BUSINESS ANALYSIS – Even Stronger, More Detailed, Emotional Storytelling -->
+    <section id="analysis">
+      <h2>Business Analysis That Saves Your Money & Multiplies Your Profit</h2>
+      <div style="max-width: 1000px; margin: auto; font-size: 1.14rem; color: var(--text-muted); line-height: 1.9;">
+
+        <p>Let’s be brutally honest for a second.</p>
+
+        <p style="margin: 1.6rem 0;">
+          You wake up every morning already behind. You open your shop, check your fintech dashboard, or look at your online sales — and that quiet voice whispers: <strong>“Did I just lose another ₦200k this week?”</strong>
+        </p>
+
+        <p>You feel it in your chest: money slipping away. Slow stock eating storage fees. Hot items gone before you reorder. Ads eating budget with no return. Customers quietly leaving because you can’t deliver. You’re working harder than ever — but the profit isn’t matching the hustle.</p>
+
+        <p style="margin: 2.8rem 0; font-weight: 600; color: var(--accent); font-size: 1.3rem; text-align: center;">
+          That ends the moment we start working together.
+        </p>
+
+        <p>As Softramming, I become your **virtual business analyst** — remote, fast, and ruthless about finding where your money is leaking and where more is hiding.</p>
+
+        <div style="margin: 3.5rem 0;">
+          <strong>Here’s what actually happens when I step in:</strong><br><br>
+
+          <strong>1. I Find the Bleeds You Can’t See</strong><br>
+          Most owners only see the symptoms — empty shelves, low cash, tired bank account. I go deeper. I analyze months of transactions, customer patterns, stock movement, ad performance. I spot the silent killers: products sitting 90+ days, channels burning money with zero return, pricing that’s quietly killing margins. I don’t guess — I show you the exact numbers. And once you see them clearly, you can’t unsee them.
+
+          <br><br>
+
+          <strong>2. I Give You the Exact Moves That Make Money</strong><br>
+          No vague advice. No 50-page reports. I hand you simple, powerful truth:<br>
+          • “Restock these 7 items every 10 days — they’ll sell 3× faster in Q4.”<br>
+          • “Cut orders on these 12 products by 45% — you’re losing ₦1.2M in dead stock every year.”<br>
+          • “Move 70% of your ad budget here — these customers spend 2.8× more and come back.”<br>
+          Every recommendation is tied to real profit impact — higher sales, lower waste, better ROI.
+
+          <br><br>
+
+          <strong>3. Real Transformations I’ve Delivered</strong><br>
+          • A fintech was short on winners and drowning in losers — cash tied up, customers frustrated. After simulations and dashboards: sales +24%, waste -37%. They scaled without fear.<br>
+          • A retailer lived in constant panic — overstock one week, empty shelves the next. After clear restock rules: sales +31%, dead stock nearly gone. He finally smiled at his bank balance.<br>
+          • Multiple businesses burned ad money on “gut feel.” After tracing every naira: ROI jumped 42% without extra spend. They stopped praying and started planning.
+
+          <br><br>
+
+          <strong>4. The Emotion You Get Back</strong><br>
+          Imagine waking up without that knot in your stomach. Imagine knowing — not hoping — that your next order, next ad run, next pricing change will make money, not lose it. Imagine confidence instead of second-guessing. That’s what I give you. Not just data. Peace of mind + real profit growth.
+        </div>
+
+        <p style="text-align: center; margin: 4rem 0; font-size: 1.35rem; color: var(--accent); font-weight: 700; line-height: 1.4;">
+          If you’re done watching money disappear<br>
+          and ready to start watching it grow —<br>
+          let’s make it happen.
+        </p>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+      <h2>Professional Journey</h2>
+      <div class="card" style="max-width: 900px; margin: 0 auto 2rem;">
+        <div class="card-body">
+          <h3>Senior Web Developer • Data Analyst • Instructor</h3>
+          <p style="color: var(--accent); font-weight: 600;">GEOCONNECT ICT LIMITED – Ekpoma, Edo State</p>
+          <p>January 2024 – December 2025</p>
+          <ul style="margin-top: 1rem; padding-left: 1.5rem; color: var(--text-muted);">
+            <li>Designed and launched geoconnectict.com — secure, fast, professional platform.</li>
+            <li>Analyzed registration & performance data to drive smarter business decisions.</li>
+            <li>Taught web development and data analysis to over 100 students.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- TOOLS -->
+    <section id="tools">
+      <h2>Core Tools I Use</h2>
+      <div class="tools-grid">
+        <div class="tool-card"><i class="fab fa-react"></i><h3>React & Frontend</h3><p>Modern, responsive interfaces</p></div>
+        <div class="tool-card"><i class="fab fa-php"></i><h3>PHP & MySQL</h3><p>Secure backend systems</p></div>
+        <div class="tool-card"><i class="fab fa-python"></i><h3>Python</h3><p>Data analysis & forecasting</p></div>
+        <div class="tool-card"><i class="fas fa-chart-line"></i><h3>Power BI & Tableau</h3><p>Powerful business dashboards</p></div>
+        <div class="tool-card"><i class="fas fa-file-excel"></i><h3>Excel Advanced</h3><p>Deep business reporting & simulations</p></div>
+      </div>
+
+      <h2 style="margin-top: 3.5rem;">Languages Proficiency</h2>
+      <div class="lang-grid">
+        <div class="lang-item"><i class="fab fa-html5"></i><strong>HTML & CSS</strong><span>Expert</span></div>
+        <div class="lang-item"><i class="fab fa-js"></i><strong>JavaScript</strong><span>Advanced</span></div>
+        <div class="lang-item"><i class="fab fa-react"></i><strong>React</strong><span>Advanced</span></div>
+        <div class="lang-item"><i class="fab fa-php"></i><strong>PHP</strong><span>Advanced</span></div>
+        <div class="lang-item"><i class="fab fa-python"></i><strong>Python</strong><span>Proficient</span></div>
+        <div class="lang-item"><i class="fas fa-database"></i><strong>MySQL</strong><span>Advanced</span></div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <h2>Selected Projects</h2>
+      <div class="grid">
+        <div class="card">
+          <div class="card-img"><i class="fas fa-chart-bar"></i></div>
+          <div class="card-body">
+            <h3>AI Sales Forecasting System</h3>
+            <p class="card-desc">Predictive model that helped businesses plan inventory and increase revenue.</p>
+            <div class="impact">Direct boost to profit margins</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img"><i class="fas fa-shield-virus"></i></div>
+          <div class="card-body">
+            <h3>Fraud Detection System</h3>
+            <p class="card-desc">Protected revenue by spotting suspicious patterns early.</p>
+            <div class="impact">Reduced financial risk</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img"><i class="fas fa-mobile-alt"></i></div>
+          <div class="card-body">
+            <h3>VTU Recharge Platform</h3>
+            <p class="card-desc">Seamless payment system with transaction insights.</p>
+            <div class="impact">Improved user retention & revenue</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img"><i class="fab fa-php"></i></div>
+          <div class="card-body">
+            <h3>GEOCONNECT ICT Official Website</h3>
+            <p class="card-desc">Live production site built from scratch.</p>
+            <div class="impact">Professional online presence</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2>Ready to Stop the Bleed & Start Winning?</h2>
+      <p style="text-align:center; max-width:800px; margin:0 auto 3rem; font-size:1.15rem; color:var(--text-muted);">
+        If you’re done watching money disappear and ready to see it grow — let’s talk. No fluff. Just results.
+      </p>
+      <div style="text-align:center;">
+        <a href="mailto:softramming@gmail.com" class="btn btn-primary">softramming@gmail.com</a>
+        <a href="https://wa.me/2347071377219?text=Hi%20Softramming,%20I%20want%20to%20stop%20losing%20money%20and%20start%20winning..." target="_blank" class="btn btn-outline">WhatsApp: +234 707 137 7219</a>
+        <a href="resume-daniel-iyare.pdf" download class="btn btn-outline">
+          <i class="fas fa-download"></i> Download Resume
+        </a>
+      </div>
+    </section>
+
+    <footer style="text-align:center; padding:4rem 0 2.5rem; color:var(--text-muted); border-top:1px solid var(--border);">
+      <p>© 2026 Softramming (Daniel Iyare) • Turning Data Into Real Profit</p>
+    </footer>
+
+  </div>
+
+  <script>
+    const toggleBtn = document.querySelector('.theme-toggle');
+    const html = document.documentElement;
+    function updateIcon() {
+      const isDark = html.getAttribute('data-theme') === 'dark';
+      toggleBtn.innerHTML = isDark ? '<i class="fas fa-moon"></i>' : '<i class="fas fa-sun"></i>';
+    }
+    if (localStorage.getItem('theme')) html.setAttribute('data-theme', localStorage.getItem('theme'));
+    updateIcon();
+    toggleBtn.addEventListener('click', () => {
+      const next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      html.setAttribute('data-theme', next);
+      localStorage.setItem('theme', next);
+      updateIcon();
+    });
+
+    const cards = document.querySelectorAll('.card');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.style.opacity = '1';
+      });
+    }, { threshold: 0.15 });
+    cards.forEach(card => {
+      card.style.transition = 'opacity 0.7s ease';
+      card.style.opacity = '0';
+      observer.observe(card);
+    });
+  </script>
+</body>
+</html>
